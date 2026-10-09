@@ -1,6 +1,6 @@
 from inserirDados import iniciarDados
 from consultarDados import listarDados
-from QrCodes.gerarQr import gerarQrCode
+from gerarQr import gerarQrCode
 
 while True:
     entrada = input("""\n

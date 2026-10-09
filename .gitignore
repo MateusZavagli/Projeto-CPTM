@@ -1,2 +1,4 @@
 .env
 QrCodes/*.png
+__pycache__/
+*.pyc

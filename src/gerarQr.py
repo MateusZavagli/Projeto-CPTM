@@ -14,7 +14,8 @@ def gerarQrCode():
 
         imagem = qrcode.make(codigo_dormente)
         nome_arquivo = f"{codigo_dormente}.png"
-        destino = os.path.dirname(os.path.abspath(__file__))
+        destino = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "QrCodes")
+        os.makedirs(destino, exist_ok=True)
         caminho = os.path.join(destino, nome_arquivo)
         imagem.save(caminho)
 
