@@ -1,4 +1,30 @@
 from database import conectar_banco
+from enum import Enum
+
+'''class Nomes(Enum):
+    1 = "Apuleia leiocarpa"
+    2 = "Apuleia molaris"
+    3 = "Aspidosperma polyneuron"
+    4 = "Bowdichia brasiliensis ou Bowdichia spp"
+    5 = "Bowdichia nitida"
+    6 = "Bowdichia racemosa"
+    7 = "Dialium guianense"
+    8 = "Diplotropis purpurea"
+    9 = "Dipteryx odorata"
+    10 = "Dipteryx spp"
+    11 = "Enterolobium schomburgkii"
+    12 = "Goupia glabra"
+    13 = "Hymenaea courbarii"
+    14 = "Hymenaea intermedia"
+    15 = "Hymenolobium petraeum ou Hymenolobium spp"
+    16 = "Mezilaurus itauba"
+    17 = "Ocotea neesiana"
+    18 = "Tabebuia serratifolia"
+    19 = "Angelim Vermelho (Promap - AMV)"
+    20 = "Coimal (Dormentes antigos - AMV)"
+    21 = "Veneer (Dormentes antigos - AMV)"
+    22 = "Astronium graveolens"
+'''
 
 def iniciarDados():
     while True:
@@ -10,6 +36,8 @@ def iniciarDados():
             break
 
         tipoMadeira = input("Insira o tipo de madeira: ")
+
+        #nome_cientifico = int(input("Insira o nome científico da madeira: "))
 
         codigo_dormente = input("Insira o código do dormente (Dormente-000X): ")
 
